@@ -1,3 +1,8 @@
-const str = "Hello";
-const newStr = str.split("").reverse().join("");
-console.log(newStr);
+function factorialize(num) {
+  let result = 1;
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+}
+factorialize(5);
