@@ -1,12 +1,5 @@
-function largestOfFour(arr) {
-  return arr.map((arr) => arr.reduce((a, b) => Math.max(a, b)));
+function confirmEnding(str, target) {
+  return str.slice(-target.length) === target;
 }
 
-console.log(
-  largestOfFour([
-    [4, 5, 1, 3],
-    [13, 27, 18, 26],
-    [32, 35, 37, 39],
-    [1000, 1001, 857, 1],
-  ])
-);
+confirmEnding("Bastian", "n");
