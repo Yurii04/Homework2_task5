@@ -1,16 +1,12 @@
-function findLongestWordLength(str) {
-  let longestWord = "";
-  let words = str.split(" ");
-  for (let i = 0; i < words.length; i += 1) {
-    let pickWord = words[i];
-    if (pickWord.length > longestWord.length) {
-      longestWord = pickWord;
-    }
-  }
-
-  return longestWord.length;
+function largestOfFour(arr) {
+  return arr.map((arr) => arr.reduce((a, b) => Math.max(a, b)));
 }
 
 console.log(
-  findLongestWordLength("The quick brown fox jumped over the lazy dog")
+  largestOfFour([
+    [4, 5, 1, 3],
+    [13, 27, 18, 26],
+    [32, 35, 37, 39],
+    [1000, 1001, 857, 1],
+  ])
 );
