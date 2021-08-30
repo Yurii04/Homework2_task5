@@ -1,6 +1,5 @@
-function truncateString(str, num) {
-  if (num >= str.length) return str;
-  return str.slice(0, num) + "...";
+function findElement(arr, func) {
+  return arr.find(func);
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+findElement([1, 2, 3, 4], (num) => num % 2 === 0);
