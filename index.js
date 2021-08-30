@@ -1,5 +1,3 @@
-function convertToF(celcius) {
-  return (celcius * 9) / 5 + 32;
-}
-
-console.log(convertToF(30));
+const str = "Hello";
+const newStr = str.split("").reverse().join("");
+console.log(newStr);
